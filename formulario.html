@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="window">
+        <div id="titlebar">
+            <button id="close-btn">×</button>
+        </div>
+        <div id="content">
+        
+            <h3>Ingrese Los Datos Requeridos</h3>
+            <div id="input-form">
+            <div class="input-group">
+                <label for="predator-population">Población Inicial de Depredadores:</label>
+                <div class="back">
+                    <input type="range" id="predator-population" min="0" max="100" value="50" required>
+                </div>
+                <div class="range-value" id="predator-population-value">50</div>
+            </div>
+            <div class="input-group">
+                <label for="predator-birth-rate">Tasa de Natalidad de Depredadores:</label>
+                <div class="back">
+                     <input type="range" id="predator-birth-rate" step="0.01" min="0" max="1" value="0.1" required>
+                 </div>
+                <div class="range-value" id="predator-birth-rate-value">0.1</div>
+            </div>
+            <div class="input-group">
+                <label for="predator-death-rate">Tasa de Mortalidad de Depredadores:</label>
+                <div class="back">
+                    <input type="range" id="predator-death-rate" step="0.01" min="0" max="1" value="0.1" required>
+                 </div>
+                <div class="range-value" id="predator-death-rate-value">0.1</div>
+            </div>
+            <div class="input-group">
+                <label for="prey-population">Población Inicial de Presas:</label>
+                <div class="back">
+                    <input type="range" id="prey-population" min="0" max="100" value="50" required>
+                </div>
+                <div class="range-value" id="prey-population-value">50</div>
+            </div>
+            <div class="input-group">
+                <label for="prey-birth-rate">Tasa de Natalidad de Presas:</label>
+                <div class="back">
+                    <input type="range" id="prey-birth-rate" step="0.01" min="0" max="1" value="0.2" required>
+                </div>
+                <div class="range-value" id="prey-birth-rate-value">0.2</div>
+            </div>
+            <div class="input-group">
+                <label for="prey-death-rate">Tasa de Mortalidad de Presas:</label>
+                <div class="back">
+                    <input type="range" id="prey-death-rate" step="0.01" min="0" max="1" value="0.1" required>
+                </div>
+                <div class="range-value" id="prey-death-rate-value">0.1</div>
+            </div>
+            
+        </div>
+        <button id="simulate-btn">Simular</button>
+        </div>
+    </div>   
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
